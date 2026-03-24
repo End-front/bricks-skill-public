@@ -11,7 +11,7 @@
     />
     <title>Landing</title>
     <script type="module" crossorigin src="/bricks-skill-public/assets/index-CWozpr7J.js"></script>
-    <link rel="stylesheet" crossorigin href="/bricks-skill-public/assets/style-CDg4FNhh.css">
+    <link rel="stylesheet" crossorigin href="/bricks-skill-public/assets/style-G6-6X6TW.css">
   </head>
   <body>
     <!-- prettier-ignore -->
@@ -284,8 +284,13 @@
 </section>
 
       <section
-  class="bg-[#D9D9D9] py-16 flex items-center min-h-[calc(100vh-var(--header-content))]"
+  class="relative z-0 py-16 flex items-center min-h-[calc(100vh-var(--header-content))]"
 >
+  <img
+    src="static/why/background.png"
+    alt=""
+    class="absolute inset-0 -z-10 h-full w-full object-cover"
+  />
   <div class="container">
     <div
       class="[--card-height:400px] md:[--card-height:350px] lg:[--card-height:200px] [--card-image-height:140px] lg:[--card-image-height:auto] [--card-image-width:100%] lg:[--card-image-width:140px] grid grid-cols-1 gap-5 md:gap-5 sm:grid-cols-2 lg:gap-x-6 lg:gap-y-3"
@@ -1334,7 +1339,7 @@
         <img
           src="static/advantages/goal.png"
           alt=""
-          class="h-auto w-[404px] aspect-[404/265] max-w-none sm:w-[697px]"
+          class="h-auto w-[404px] aspect-[404/265] max-w-none sm:w-[697px] -ml-6 sm:ml-0"
         />
       </div>
 
@@ -1361,7 +1366,7 @@
         class="flex flex-col rounded-[40px] border border-black w-[242px] mr-auto max-w-full self-center lg:ml-auto lg:mr-0 xl:flex-row xl:w-[552px] xl:items-center"
       >
         <span
-          class="flex items-center px-6 text-[50px]/[1.2] font-medium bg-black text-white rounded-full h-[78px] sm:text-[60px]/[1.2]"
+          class="flex items-center px-6 text-[50px]/[1.2] font-medium bg-black text-white rounded-full h-[78px] sm:text-[60px]/[1.2] self-start xl:self-auto"
         >
           +50
         </span>
@@ -2066,6 +2071,7 @@
               <video
                 class="h-full w-full rounded-[30px] object-cover"
                 src="static/reviews/1.mp4"
+                poster="static/reviews/1.png"
                 playsinline
                 preload="metadata"
                 controls
@@ -2076,6 +2082,7 @@
               <video
                 class="h-full w-full rounded-[30px] object-cover object-top"
                 src="static/reviews/2.mp4"
+                poster="static/reviews/2.png"
                 playsinline
                 preload="metadata"
                 controls

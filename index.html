@@ -10,8 +10,8 @@
       rel="stylesheet"
     />
     <title>Landing</title>
-    <script type="module" crossorigin src="/bricks-skill-public/assets/index-CWozpr7J.js"></script>
-    <link rel="stylesheet" crossorigin href="/bricks-skill-public/assets/style-G6-6X6TW.css">
+    <script type="module" crossorigin src="/bricks-skill-public/assets/index-B3TYDNSs.js"></script>
+    <link rel="stylesheet" crossorigin href="/bricks-skill-public/assets/style-Y8-KRXcN.css">
   </head>
   <body>
     <!-- prettier-ignore -->
@@ -22,7 +22,7 @@
   class="[--header-content:48px] lg:[--header-content:90px] 2xl:[--header-content:100px] h-[--header-content]"
 >
   <div
-    class="w-full h-[--header-content] lg:fixed lg:left-0 lg:top-0 lg:z-50 bg-primary text-primary-foreground flex items-center"
+    class="w-full h-[--header-content] fixed left-0 top-0 z-50 bg-primary text-primary-foreground flex items-center"
   >
     <nav
       class="container flex items-center gap-8"
@@ -34,30 +34,46 @@
         class="w-[48px] h-[29px] lg:w-[84px] lg:h-[52px]"
       />
 
-      <ul
-        class="ml-auto hidden text-base/[1.2] font-medium lg:flex gap-10 [&>li>a]:border-b [&>li>a]:border-transparent [&>li>a]:transition-all [&>li>a:hover]:opacity-80 [&>li>a[data-current]]:border-current"
+      <div
+        class="translate-x-20 opacity-0 transition duration-200 data-[burger-menu-state='opened']:translate-x-0 data-[burger-menu-state='opened']:opacity-100 lg:translate-x-0 lg:opacity-100 absolute lg:static top-full left-0 w-full h-auto bg-primary flex flex-col lg:flex-row lg:justify-end gap-8"
+        data-burger-menu
+        data-burger-menu-state="closed"
       >
-        <li><a href="#for-who">кому</a></li>
-        <li><a href="#program">программа</a></li>
-        <li><a href="#tariffs">цены</a></li>
-        <li><a href="#advantages">фишки</a></li>
-        <li><a href="#author">об авторе</a></li>
-        <li><a href="#cases">кейсы</a></li>
-        <li><a href="#reviews">отзывы</a></li>
-      </ul>
+        <ul
+          class="flex-col items-center lg:flex-row py-8 lg:py-0 text-base/[1.2] font-medium flex gap-y-4 gap-x-10 [&>li>a]:border-b [&>li>a]:border-transparent [&>li>a]:transition-all [&>li>a:hover]:opacity-80 [&>li>a[data-current]]:border-current"
+        >
+          <li><a href="#for-who">кому</a></li>
+          <li><a href="#program">программа</a></li>
+          <li><a href="#tariffs">цены</a></li>
+          <li><a href="#advantages">фишки</a></li>
+          <li><a href="#author">об авторе</a></li>
+          <li><a href="#cases">кейсы</a></li>
+          <li><a href="#reviews">отзывы</a></li>
+        </ul>
 
-      <a
-        href="https://t.me/protorgi_com"
-        target="_blank"
-        class="transition-opacity hover:opacity-80 hidden lg:flex"
-        aria-label="Telegram"
+        <a
+          href="https://t.me/protorgi_com"
+          target="_blank"
+          class="transition-opacity hover:opacity-80 flex justify-center mb-8 lg:mb-0"
+          aria-label="Telegram"
+        >
+          <img
+            src="/bricks-skill-public/static/telegram.svg"
+            alt="Telegram"
+            class="w-[41px] h-[34px]"
+          />
+        </a>
+      </div>
+
+      <button
+        data-burger-menu-trigger
+        class="lg:hidden ml-auto flex flex-col gap-1.5 w-[25px]"
+        aria-label="Меню"
       >
-        <img
-          src="/bricks-skill-public/static/telegram.svg"
-          alt="Telegram"
-          class="w-[41px] h-[34px]"
-        />
-      </a>
+        <span class="w-full bg-current h-0.5"></span>
+        <span class="w-full bg-current h-0.5"></span>
+        <span class="w-full bg-current h-0.5"></span>
+      </button>
     </nav>
   </div>
 </header>
@@ -85,18 +101,18 @@
     class="pointer-events-none absolute -z-10 bottom-0 left-0 w-full h-[53%] bg-[linear-gradient(0deg,#0B0A33_65.56%,rgba(11,10,51,0)_100%)] md:hidden"
   ></div>
 
-  <div
-    class="container pt-[60px] pb-10 md:flex md:items-center xl:pb-0 relative"
-  >
-    <div class="mb-28 md:w-1/2 lg:w-[54%]">
+  <div class="container pt-6 pb-5 md:flex md:items-center xl:pb-0 relative">
+    <div class="mb-16 sm:mb-28 md:w-1/2 lg:w-[54%]">
       <h1
-        class="max-w-[12.6em] text-[26px]/[1.2] font-semibold lg:text-[42px]/[1.2] xl:text-[48px]/[1.2] mb-6"
+        class="max-w-[12.6em] text-[26px]/[1.2] font-semibold lg:text-[42px]/[1.2] xl:text-[48px]/[1.2] sm:mb-6"
       >
         Как за 10 недель собрать&nbsp;полную систему уверенного заработка
         на&nbsp;банкротных торгах
       </h1>
 
-      <h2 class="max-w-[21.4em] text-[18px]/[1.2] lg:text-[24px]/[1.2]">
+      <h2
+        class="max-w-[21.4em] text-[18px]/[1.2] lg:text-[24px]/[1.2] hidden sm:block"
+      >
         и выйти на готовность к первым сделкам с чёткой логикой и структурой,
         которая уже сработала у других учеников
       </h2>
@@ -127,7 +143,7 @@
         <img
           src="/bricks-skill-public/static/hero/expert.png"
           alt="Эксперт программы"
-          class="aspect-[445/908] h-auto w-full -mb-[36.7%] xl:mb-[clamp(-28%,calc(100vh-968px-var(--header-content)),0%)]"
+          class="aspect-[445/908] h-auto w-full -mb-[94%] sm:-mb-[36.7%] xl:mb-[clamp(-28%,calc(100vh-968px-var(--header-content)),0%)]"
         />
       </div>
 
@@ -169,12 +185,12 @@
     </div>
 
     <p
-      class="mt-7 text-center text-base/[1.2] md:absolute md:bottom-10 md:left-auto lg:text-lg/[1.2]"
+      class="mt-6 text-center text-base/[1.2] md:absolute md:bottom-10 md:left-auto lg:text-lg/[1.2]"
     >
       Старт нового потока 21.08.2026
     </p>
 
-    <div class="mt-4 flex flex-col gap-5 md:hidden max-[360px] mx-auto">
+    <div class="mt-4 flex flex-col gap-4 md:hidden max-[360px] mx-auto">
       
 <a
   href="https://protorgicom.getcourse.ru/2026_protorgi"
